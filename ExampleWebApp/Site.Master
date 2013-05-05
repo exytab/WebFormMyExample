@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ExampleWebApp.Site" %>
+
+<%@ Register Src="~/UserControl/menu.ascx" TagPrefix="uc1" TagName="menu" %>
+<%@ Register Src="~/UserControl/sidebar.ascx" TagPrefix="uc1" TagName="sidebar" %>
+<%@ Register Src="~/UserControl/footer.ascx" TagPrefix="uc1" TagName="footer" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Пример</title>
+<!-- Css и какой то шрифт, который был в шаблоне -->
+<link href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- ДжаваСкрипт -->
+<!-- Сначала пишем джеквеери и общие библиотеки -->
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<!-- Потом свои плагины -->
+<script type="text/javascript" src="/js/ExampleWebApp.Click.js"></script>
+<!-- Потом плагин который запускает все плагины -->
+<script type="text/javascript" src="/js/ExampleWebApp.Common.js"></script>
+</head>
+<body>
+<!-- Сам шаблон -->
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Macro Spikes</a></h1>
+		</div>
+		<div id="menu">
+            <uc1:menu runat="server" id="menu1" />
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+           <asp:ContentPlaceHolder ID="ContentPart" runat="server" />
+		</div>
+		<div id="sidebar">
+            <uc1:sidebar runat="server" id="sidebar1" />
+		</div>
+	</div>
+	<div id="footer">
+        <uc1:footer runat="server" id="footer1" />
+	</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+E:\Dropbox\Project\ExampleWebApp\ExampleWebApp\bin\ExampleWebApp.dll
+E:\Dropbox\Project\ExampleWebApp\ExampleWebApp\bin\ExampleWebApp.pdb
+E:\Dropbox\Project\ExampleWebApp\ExampleWebApp\obj\Debug\ExampleWebApp.csprojResolveAssemblyReference.cache
+E:\Dropbox\Project\ExampleWebApp\ExampleWebApp\obj\Debug\ExampleWebApp.dll
+E:\Dropbox\Project\ExampleWebApp\ExampleWebApp\obj\Debug\ExampleWebApp.pdb
